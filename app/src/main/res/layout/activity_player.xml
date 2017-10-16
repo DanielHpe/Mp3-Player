@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/viewMp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/download"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/duracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/viewMp3"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_marginRight="40dp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewMp3"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/backSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backwards"
+        android:layout_below="@+id/viewMp3"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:id="@+id/pausePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pause"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/viewMp3" />
+
+    <ImageView
+        android:id="@+id/forwardSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewMp3"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/forward"/>
+
+    <TextView
+        android:id="@+id/textSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/backSong"
+        android:textColor="#000"/>
+
+</RelativeLayout>
